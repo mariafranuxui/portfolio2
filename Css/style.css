@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+* {
+  font-family: 'Open Sans'
+}
+
+/* Note: Try to remove the following lines to see the effect of CSS positioning */
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+
+  header {
+    /* The image used */
+    background-image: url("../Img/family.gif");
+     
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1.center-text-header {
+    text-align: center;
+    padding-top: 400px;
+  }
+
+
+
+  .img-wrapper 
+  .a {
+    background-color: blue;
+    transition: background-color .5s;
+  }
+  
+  a:hover {
+    background-color: gold;
+  }
