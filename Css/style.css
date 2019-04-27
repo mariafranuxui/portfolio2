@@ -4,20 +4,16 @@
   font-family: 'Open Sans'
 }
 
-/* Note: Try to remove the following lines to see the effect of CSS positioning */
-.affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-  }
-
-  .affix + .container-fluid {
-    padding-top: 70px;
-  }
-
   header {
     /* The image used */
-    background-image: url("../Img/family.gif");
+    /* background-image: url("../Img/backgroundhome.png"); */
+    background: rgb(165, 236, 229);
+    padding-top: 71px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
      
     /* Full height */
     height: 100%;
@@ -28,19 +24,165 @@
     background-size: cover;
   }
 
-  h1.center-text-header {
-    text-align: center;
-    padding-top: 400px;
-  }
-
-
-
-  .img-wrapper 
-  .a {
-    background-color: blue;
-    transition: background-color .5s;
-  }
   
-  a:hover {
-    background-color: gold;
-  }
+.header {
+  background: aliceblue;
+  height: 100%;
+  /*padding-top: 71px;*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar.a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.content {
+  
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ver-proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.linea {
+  display: flex;
+  justify-content: center;
+  width: 5%;
+  height: 100px;
+
+}
+
+.horizontalFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+.verticalFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 40%;
+}
+
+.imag {
+  width: 60%;
+  max-width: 624px;
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  max-width: 300px;
+}
+
+
+.standarMargins {
+  margin: 15px;
+  padding: 15px;
+}
+
+.projectSectionMargins {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.articleFormats{
+  margin-top:50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right:200px;
+}
+ 
+.footer {
+  height: 150px;
+  
+}
+
+.footerFlex{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenlyt;
+  align-items: center;
+}
+
+section>hr { 
+  background-color: black; 
+  height: 1px;
+  border: 0; 
+}
+
+div.fullWitdh{
+  columns: 100%;
+}
+
+
+/*ASPECT RAIO UTILS*/
+
+[class*='ratio-'] {
+  display: block;
+  position: relative;
+}
+
+[class*='ratio-'] > * {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aspect-ratio-wide {
+  padding-top: 56.25%;
+}
+
+.aspect-ratio-square {
+  padding-top: 100%;
+}
+
+.aspect-ratio-mine {
+  padding-top: 80%;
+}
+
+
